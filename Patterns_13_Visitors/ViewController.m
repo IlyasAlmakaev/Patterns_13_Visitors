@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "WareHouse.h"
+#import "PriceChekerVisitor.h"
+#import "QualityChekerVisitor.h"
 
 @interface ViewController ()
 
@@ -16,7 +19,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    WareHouse *localWareHouse = [[WareHouse alloc] init];
+    [localWareHouse addItem:[[WareHouseItem alloc] initWithArgs:@"Item1" andQuality:NO andPrice:25]];
+    [localWareHouse addItem:[[WareHouseItem alloc] initWithArgs:@"Item2" andQuality:NO andPrice:32]];
+    [localWareHouse addItem:[[WareHouseItem alloc] initWithArgs:@"Item3" andQuality:YES andPrice:45]];
+    [localWareHouse addItem:[[WareHouseItem alloc] initWithArgs:@"Item4" andQuality:NO andPrice:33]];
+    [localWareHouse addItem:[[WareHouseItem alloc] initWithArgs:@"Item5" andQuality:NO andPrice:12]];
+    [localWareHouse addItem:[[WareHouseItem alloc] initWithArgs:@"Item6" andQuality:YES andPrice:78]];
+    [localWareHouse addItem:[[WareHouseItem alloc] initWithArgs:@"Item7" andQuality:YES andPrice:34]];
+    [localWareHouse addItem:[[WareHouseItem alloc] initWithArgs:@"Item8" andQuality:NO andPrice:51]];
+    [localWareHouse addItem:[[WareHouseItem alloc] initWithArgs:@"Item9" andQuality:NO andPrice:25]];
+    
+    PriceChekerVisitor *visitor = [[PriceChekerVisitor alloc] init];
+    QualityChekerVisitor *qualityVisitor = [[QualityChekerVisitor alloc] init];
+    
+    [localWareHouse accept:visitor];
+    [localWareHouse accept:qualityVisitor];
 }
 
 

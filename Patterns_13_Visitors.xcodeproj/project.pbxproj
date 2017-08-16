@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281420D51F4456690006E81D /* WareHouseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 281420D41F4456690006E81D /* WareHouseItem.m */; };
+		281420D81F4457400006E81D /* WareHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 281420D71F4457400006E81D /* WareHouse.m */; };
+		281420DE1F445DDF0006E81D /* QualityChekerVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 281420DD1F445DDF0006E81D /* QualityChekerVisitor.m */; };
+		281420E11F445F0C0006E81D /* PriceChekerVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 281420E01F445F0C0006E81D /* PriceChekerVisitor.m */; };
 		2851E7DD1F3DD248001CE597 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2851E7DC1F3DD248001CE597 /* main.m */; };
 		2851E7E01F3DD248001CE597 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2851E7DF1F3DD248001CE597 /* AppDelegate.m */; };
 		2851E7E31F3DD248001CE597 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2851E7E21F3DD248001CE597 /* ViewController.m */; };
@@ -16,6 +20,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		281420D31F4456690006E81D /* WareHouseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WareHouseItem.h; sourceTree = "<group>"; };
+		281420D41F4456690006E81D /* WareHouseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WareHouseItem.m; sourceTree = "<group>"; };
+		281420D61F4457400006E81D /* WareHouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WareHouse.h; sourceTree = "<group>"; };
+		281420D71F4457400006E81D /* WareHouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WareHouse.m; sourceTree = "<group>"; };
+		281420D91F4459CE0006E81D /* BasicVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicVisitor.h; sourceTree = "<group>"; };
+		281420DC1F445DDF0006E81D /* QualityChekerVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualityChekerVisitor.h; sourceTree = "<group>"; };
+		281420DD1F445DDF0006E81D /* QualityChekerVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QualityChekerVisitor.m; sourceTree = "<group>"; };
+		281420DF1F445F0C0006E81D /* PriceChekerVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceChekerVisitor.h; sourceTree = "<group>"; };
+		281420E01F445F0C0006E81D /* PriceChekerVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceChekerVisitor.m; sourceTree = "<group>"; };
 		2851E7D81F3DD248001CE597 /* Patterns_13_Visitors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patterns_13_Visitors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2851E7DC1F3DD248001CE597 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2851E7DE1F3DD248001CE597 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +73,15 @@
 			children = (
 				2851E7DE1F3DD248001CE597 /* AppDelegate.h */,
 				2851E7DF1F3DD248001CE597 /* AppDelegate.m */,
+				281420D31F4456690006E81D /* WareHouseItem.h */,
+				281420D41F4456690006E81D /* WareHouseItem.m */,
+				281420D61F4457400006E81D /* WareHouse.h */,
+				281420D71F4457400006E81D /* WareHouse.m */,
+				281420D91F4459CE0006E81D /* BasicVisitor.h */,
+				281420DC1F445DDF0006E81D /* QualityChekerVisitor.h */,
+				281420DD1F445DDF0006E81D /* QualityChekerVisitor.m */,
+				281420DF1F445F0C0006E81D /* PriceChekerVisitor.h */,
+				281420E01F445F0C0006E81D /* PriceChekerVisitor.m */,
 				2851E7E11F3DD248001CE597 /* ViewController.h */,
 				2851E7E21F3DD248001CE597 /* ViewController.m */,
 				2851E7E41F3DD248001CE597 /* Main.storyboard */,
@@ -151,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281420D51F4456690006E81D /* WareHouseItem.m in Sources */,
 				2851E7E31F3DD248001CE597 /* ViewController.m in Sources */,
+				281420D81F4457400006E81D /* WareHouse.m in Sources */,
 				2851E7E01F3DD248001CE597 /* AppDelegate.m in Sources */,
+				281420E11F445F0C0006E81D /* PriceChekerVisitor.m in Sources */,
+				281420DE1F445DDF0006E81D /* QualityChekerVisitor.m in Sources */,
 				2851E7DD1F3DD248001CE597 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +340,7 @@
 				2851E7F11F3DD248001CE597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
